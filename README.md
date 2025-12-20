@@ -1,33 +1,49 @@
-🏭 Manufacturing Operations Analytics
+📊 Manufacturing & Operations Data Analysis
+
 📌 Project Overview
 
-An end-to-end manufacturing analytics project focused on production efficiency, quality defects, downtime, cost, and energy consumption using a large operational dataset (300K+ records). The objective is to generate actionable insights for data-driven decision-making in industrial environments.
+This project focuses on analyzing manufacturing and operations data to identify defects, evaluate operational performance, and track key business KPIs.
+The goal is to transform raw production data into actionable insights that support data-driven decision-making and process improvement.
+
+The analysis combines SQL for data extraction and Python (Pandas) for data cleaning, exploration, and insight generation.
 
 📊 Dataset
 
-Records: 300,000+
+Records: 3240
 Format: CSV
 Domain: Manufacturing / Operations / Supply Chain
 
 Key Fields:
-ProductionLine, Supplier, QuantityProduced, ProductionCost, DefectStatus, DowntimeHours, EnergyConsumption, OrderDate
+ProductionVolume, ProductionCost, SupplierQuality, DeliveryDelay, QualityScore, MaintenanceHours, DowntimePercentage, InventoryTurnover, StockoutRate, WorkerProductivity, SafetyIncidents, EnergyConsumption, EnergyEfficiency, AdditiveProcessTime, AdditiveMaterialCost, DefectStatus, PredictedDefect
+
 
 🛠 Tools & Technologies
 
-SQL: Data querying, aggregation, KPI calculation
-Python: Data cleaning & EDA (pandas, numpy, matplotlib
-Jupyter Notebook: Analysis & documentation
+SQL (MySQL) – Data extraction, joins, filtering, aggregations
+Python – Data analysis and transformation
+Pandas & NumPy – Data cleaning, EDA, calculations
+Jupyter Notebook – Analysis and documentation
+Excel – Initial inspection and validation (if required)
 
 🔍 Project Workflow
 
-Cleaned and preprocessed manufacturing data using Python
-Performed SQL analysis using GROUP BY, HAVING, JOINs, and window functions
-Conducted EDA to identify trends, bottlenecks, and quality issues
-Developed core manufacturing KPIs
+Data Extraction
+Queried manufacturing data using SQL
+Data Cleaning
+Handled missing values and duplicates
+Exploratory Data Analysis (EDA)
+Analyzed defect trends and operational patterns
+Identified anomalies and performance variations
 
-📈 Key KPIs & Insights
+KPI Analysis
 
-Identified production lines with consistently high defect rates
-Analyzed downtime impact on production output
-Compared supplier quality performance
-Highlighted opportunities for cost and energy efficiency improvement
+Calculated operational and quality metrics
+Compared performance across time periods and categories
+Translated analytical results into business-focused insights
+
+ 📈 Key KPIs & Insights
+- **Overall Defect Rate**: SQL-driven KPI to assess manufacturing quality performance.
+- **Supplier Quality & Downtime are top defect drivers**, showing strong correlation with defect rate.
+- **Energy Efficiency positively impacts product quality**, highlighting operational sustainability.
+- **High Production Costs often align with defect-heavy batches**, indicating inefficiencies and rework.
+- **Defect prediction model performs reliably** (validated via SQL-based confusion matrix).
